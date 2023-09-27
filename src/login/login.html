@@ -1,0 +1,129 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <script src="login.js"></script>
+    <style>
+
+        body{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #container-login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 140px);
+            background-color: black;
+        }
+
+        #login {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 400px;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
+        }
+
+        #login h1 {
+            font-size: 30px;
+            color: #000;
+            margin-bottom: 30px;
+        }
+
+        #login input[type="text"],
+        #login input[type="password"] {
+            width: 300px;
+            height: 40px;
+            padding: 0 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            font-size: 16px;
+        }
+
+        #login input[type="submit"] {
+            width: 320px;
+            height: 40px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            font-size: 16px;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #login input[type="submit"]:hover {
+            background-color: #333;
+        }
+
+        header{
+            background-color: rgba(0, 0, 0, 0.850);
+            height: 100px;
+            padding: 20px;
+        }
+
+        .container-header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .font-100{
+            font-size: 100px;
+        }
+
+        .center{
+            text-align: center;
+            color: yellow ;
+        }
+
+        .lista-menu{
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .lista-menu, li{
+            margin-right:0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <div class="font-100 center">
+                BlackOut
+            </div>
+        </div>
+    </header>
+    <div id="container-login">
+
+        <div >
+            <form action="/login" method="post" id="login">
+                <h1>LOGIN</h1>
+                <input type="text" name="email" placeholder="Email" required>
+                <input type="password" name="senha" placeholder="Senha" required>
+                <input type="submit"  value="Login">
+            </form>
+        </div>
+
+    </div> 
+</body>
+</html>
